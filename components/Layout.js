@@ -1,10 +1,13 @@
 import MainNav from "./MainNav";
 const Layout = function (props) {
   return (
-    <div>
-      <MainNav />
-      {props.children}
-    </div>
+    <>
+      <header>
+        <MainNav />
+      </header>
+      <body>{props.children}</body>
+      <footer>footer</footer>
+    </>
   );
 };
 
