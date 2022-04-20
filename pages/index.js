@@ -12,13 +12,13 @@ const Home = function (props) {
   return <ProductsList data={props.products} />;
 };
 
-export async function getServerSideProps(context) {
-  return {
-    props: {
-      products,
-    },
-  };
-}
+// export async function getServerSideProps(context) {
+//   return {
+//     props: {
+//       products,
+//     },
+//   };
+// }
 // export async function getStaticProps() {
 //   return {
 //     props: {
