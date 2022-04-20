@@ -1,13 +1,11 @@
 import MainNav from "./MainNav";
+// import { Fragment } from "react";
 const Layout = function (props) {
   return (
-    <>
-      <header>
-        <MainNav />
-      </header>
-      <body>{props.children}</body>
-      <footer>footer</footer>
-    </>
+    <div>
+      <MainNav />
+      {props.children}
+    </div>
   );
 };
 

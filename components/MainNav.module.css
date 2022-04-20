@@ -2,3 +2,13 @@
   width: 100%;
   padding: 2rem 10rem;
 }
+.nav,
+.list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list li:not(:last-child) {
+  margin-right: 3rem;
+}
