@@ -57,3 +57,10 @@ button {
 footer {
   background-color: var(--color-primary-light);
 }
+
+.base-main {
+  max-width: 90%;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 4rem 0;
+}

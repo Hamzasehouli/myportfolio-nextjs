@@ -10,7 +10,9 @@ const Layout = function (props) {
         </BaseSection>
       </header>
       <main>
-        <BaseSection>{props.children}</BaseSection>
+        <BaseSection>
+          <div className="base-main">{props.children}</div>
+        </BaseSection>
       </main>
       <footer>
         <BaseSection>footer</BaseSection>
