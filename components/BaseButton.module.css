@@ -1,0 +1,11 @@
+.flat {
+  background-color: var(--color-secondary);
+}
+
+.ghost {
+  background-color: var(--color-primary);
+}
+
+.btn {
+  border-radius: 10px;
+}
