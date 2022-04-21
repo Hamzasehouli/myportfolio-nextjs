@@ -2,6 +2,7 @@ import Class from "./MainNav.module.css";
 import Link from "next/Link";
 import { useRouter } from "next/router";
 import BaseButton from "./BaseButton";
+
 const MainNav = function (props) {
   const router = useRouter();
   return (
