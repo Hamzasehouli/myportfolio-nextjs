@@ -1,6 +1,7 @@
 .nav {
   width: 100%;
-  padding: 1rem 0;
+  padding: 3rem 0;
+  font-size: 14px;
 }
 .nav,
 .list {
@@ -10,5 +11,5 @@
 }
 
 .list li:not(:last-child) {
-  margin-right: 3rem;
+  margin-right: 4rem;
 }

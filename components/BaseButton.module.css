@@ -2,12 +2,22 @@
   background-color: var(--color-secondary);
   color: var(--color-primary);
   padding: 10px 20px;
+  transition: all 0.2s;
+}
+
+.flat:hover {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
 }
 
 .ghost {
   background-color: var(--color-primary);
-  color: rgb(211, 209, 209);
+  color: var(--color-light);
   /* background-color: var(--color-primary); */
+}
+.ghost:hover {
+  background-color: transparent;
+  color: var(--color-secondary);
 }
 
 .flat,

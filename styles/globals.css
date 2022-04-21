@@ -8,7 +8,7 @@
   --color-secondary-dark: yellow;
 
   --color-dark: #222831;
-  --color-light: #f5eded;
+  --color-light: #ccd6f6;
 }
 
 *,
@@ -21,12 +21,12 @@
 
 html {
   box-sizing: border-box;
-  font-size: 0.62;
+  font-size: 62.5%;
   background-color: var(--color-primary);
 }
 
 body {
-  font-size: 14px;
+  font-size: 1.6rem;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
   text-rendering: optimizeLegibility;
