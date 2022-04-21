@@ -4,8 +4,10 @@
 
 .ghost {
   background-color: var(--color-primary);
+  /* background-color: var(--color-primary); */
 }
 
-.btn {
+.flat,
+.ghost {
   border-radius: 10px;
 }

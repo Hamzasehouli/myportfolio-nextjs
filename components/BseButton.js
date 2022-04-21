@@ -1,16 +1,16 @@
 import Link from "next/Link";
-import Classes from "./BaseButton.module.css";
+import Class from "./BaseButton.module.css";
 const BaseButton = function (props) {
-  if (props.buttonType === "button") {
+  if (props.mode === "button") {
     return (
-      <button className={Classes[props.state]} type={props.type}>
+      <button className={Class["ghost"]} type={props.type}>
         {props.children}
       </button>
     );
-  } else if (props.buttonType === "anchor") {
+  } else if (props.mode === "anchor") {
     return (
-      <Link className={Classes[props.state]} href={props.to}>
-        {props.children}
+      <Link href={props.to}>
+        <a className={Class["ghost"]}>{props.children}</a>
       </Link>
     );
   }
