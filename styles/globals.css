@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,300&display=swap");
 :root {
   --color-primary-light: black;
   --color-primary: #071c21;
@@ -27,7 +28,7 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 400;
   text-rendering: optimizeLegibility;
   color: var(--color-light);
@@ -63,4 +64,51 @@ footer {
   margin: 0 auto;
   min-height: 100vh;
   padding: 4rem 0;
+}
+
+.hero {
+  height: 100vh;
+}
+
+.name {
+  font-size: 7rem;
+  margin-bottom: 0.5rem;
+}
+.identity {
+  font-size: 6rem;
+  opacity: 0.7;
+}
+
+::selection {
+  background-color: #14ffec;
+  color: #071c21;
+}
+
+.icons {
+  position: fixed;
+  right: 5rem;
+  top: 20rem;
+  z-index: 999999999;
+  flex-direction: column;
+}
+
+.icons > *:not(:last-of-type) {
+  margin-bottom: 2rem;
+}
+
+main {
+  position: relative;
+}
+
+.icon {
+  fill: var(--color-light);
+  width: 2rem;
+  height: 2rem;
+  transition: all 0.3s;
+}
+
+.icon:hover {
+  fill: var(--color-secondary);
+  transform: rotate(-360deg);
+  /* transform: translateX(-2rem); */
 }
