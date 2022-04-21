@@ -3,14 +3,14 @@ import Class from "./BaseButton.module.css";
 const BaseButton = function (props) {
   if (props.mode === "button") {
     return (
-      <button className={Class["ghost"]} type={props.type}>
+      <button className={Class[props.state]} type={props.type}>
         {props.children}
       </button>
     );
   } else if (props.mode === "anchor") {
     return (
       <Link href={props.to}>
-        <a className={Class["ghost"]}>{props.children}</a>
+        <a className={Class[props.state]}>{props.children}</a>
       </Link>
     );
   }

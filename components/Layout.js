@@ -3,8 +3,11 @@ import MainNav from "./MainNav";
 const Layout = function (props) {
   return (
     <div>
-      <MainNav />
-      {props.children}
+      <header>
+        <MainNav />
+      </header>
+      <main>{props.children}</main>
+      <footer>footer</footer>
     </div>
   );
 };

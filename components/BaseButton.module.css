@@ -1,13 +1,16 @@
 .flat {
   background-color: var(--color-secondary);
+  color: var(--color-primary);
+  padding: 10px 20px;
 }
 
 .ghost {
   background-color: var(--color-primary);
+  color: rgb(211, 209, 209);
   /* background-color: var(--color-primary); */
 }
 
 .flat,
 .ghost {
-  border-radius: 10px;
+  border-radius: 6px;
 }

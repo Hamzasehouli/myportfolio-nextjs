@@ -1,12 +1,14 @@
 import Class from "./MainNav.module.css";
-import Link from "next/link";
+import Link from "next/Link";
 import { useRouter } from "next/router";
-import BaseButton from "./BseButton";
+import BaseButton from "./BaseButton";
 const MainNav = function (props) {
   const router = useRouter();
   return (
     <nav className={Class.nav}>
-      <p>LOGO</p>
+      <Link href="/">
+        <p>LOGO</p>
+      </Link>
       <ul className={Class.list}>
         <li>
           <BaseButton mode="anchor" state="ghost" to="/about">
@@ -24,7 +26,7 @@ const MainNav = function (props) {
           </BaseButton>
         </li>
         <li>
-          <BaseButton type="button" mode="button" state="ghost">
+          <BaseButton type="button" mode="button" state="flat">
             Resume
           </BaseButton>
         </li>
