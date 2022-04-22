@@ -2,7 +2,6 @@ import MainNav from "./MainNav";
 // import { Fragment } from "react";
 import BaseSection from "./BaseSection";
 const Layout = function (props) {
-  const kaak = require("../public/docker.svg");
   return (
     <div>
       <header>

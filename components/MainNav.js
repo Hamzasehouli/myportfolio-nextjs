@@ -8,7 +8,7 @@ const MainNav = function (props) {
   return (
     <nav className={Class.nav}>
       <Link href="/">
-        <p>LOGO</p>
+        <img className="logo" src="/Logo.svg" />
       </Link>
       <ul className={Class.list}>
         <li>

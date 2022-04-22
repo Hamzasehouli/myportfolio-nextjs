@@ -1,9 +1,17 @@
+import BaseButton from "../components/BaseButton";
 const Home = function () {
   return (
     <>
       <section className="hero">
         <h1 className="name">Hamza Sehouli</h1>
-        <h2 className="identity">Web and mobile Developer</h2>
+        <h2 className="identity">Fullstack web and mobile developer</h2>
+        <figure className="description">
+          Who turns ideas into reality with web and mobile technologies.
+        </figure>
+
+        <BaseButton mode="button" type="button" state="empty">
+          See my articls
+        </BaseButton>
       </section>
     </>
   );

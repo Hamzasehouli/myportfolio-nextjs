@@ -2,7 +2,6 @@
   background-color: var(--color-secondary);
   color: var(--color-primary);
   padding: 10px 20px;
-  transition: all 0.2s;
 }
 
 .flat:hover {
@@ -20,7 +19,21 @@
   color: var(--color-secondary);
 }
 
+.empty {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  border: 1.5px solid var(--color-secondary);
+  padding: 10px 20px;
+}
+
+.empty:hover {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+}
+
 .flat,
-.ghost {
+.ghost,
+.empty {
   border-radius: 6px;
+  transition: all 0.2s;
 }
