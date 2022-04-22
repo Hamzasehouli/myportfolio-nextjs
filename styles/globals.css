@@ -120,5 +120,15 @@ main {
   /* transform: translateX(-2rem); */
 }
 
+.splash {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .logo {
+  cursor: pointer;
 }
