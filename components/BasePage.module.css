@@ -1,0 +1,14 @@
+.title {
+  font-size: 5rem;
+  position: relative;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 5px;
+  top: 100%;
+  left: 0;
+  background-color: var(--color-secondary);
+}

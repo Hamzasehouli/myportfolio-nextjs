@@ -1,5 +1,6 @@
+import BasePage from "../../components/BasePage";
 const Work = function () {
-  return <>Work</>;
+  return <BasePage title="My achievments"></BasePage>;
 };
 
 export default Work;
