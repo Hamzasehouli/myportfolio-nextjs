@@ -10,7 +10,7 @@ const Home = function () {
         </figure>
 
         <BaseButton mode="button" type="button" state="empty">
-          See my articls
+          Read my wrtings
         </BaseButton>
       </section>
     </>

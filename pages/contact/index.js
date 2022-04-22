@@ -1,5 +1,6 @@
+import BasePage from "../../components/BasePage";
 const Contact = function () {
-  return <div>Contact</div>;
+  return <BasePage title="Contact">Contact</BasePage>;
 };
 
 export default Contact;
