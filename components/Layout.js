@@ -1,5 +1,5 @@
 import MainNav from "./MainNav";
-// import { Fragment } from "react";
+import Footer from "./Footer";
 import BaseSection from "./BaseSection";
 const Layout = function (props) {
   return (
@@ -65,9 +65,7 @@ const Layout = function (props) {
           </li>
         </ul>
       </main>
-      <footer>
-        <BaseSection>footer</BaseSection>
-      </footer>
+      <Footer></Footer>
     </div>
   );
 };
