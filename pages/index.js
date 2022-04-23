@@ -1,4 +1,5 @@
 import BaseButton from "../components/BaseButton";
+import BasePage from "../components/BasePage";
 const Home = function () {
   return (
     <>
@@ -12,6 +13,9 @@ const Home = function () {
         <BaseButton mode="button" type="button" state="empty">
           Read my wrtings
         </BaseButton>
+      </section>
+      <section className="blog">
+        <BasePage title="My blog"></BasePage>
       </section>
     </>
   );
