@@ -33,6 +33,9 @@ body {
   text-rendering: optimizeLegibility;
   color: var(--color-light);
 }
+p {
+  line-height: 150%;
+}
 
 ul {
   list-style: none;
