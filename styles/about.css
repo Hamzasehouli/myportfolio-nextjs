@@ -18,6 +18,10 @@
   display: none;
 }
 
+.myself p {
+  margin-top: 2rem;
+}
+
 .menu {
   display: flex;
   margin: 2rem 0;
