@@ -59,7 +59,7 @@ export const TECHNOS = [
     id: "t12",
     title: "Docker",
     link: "https://www.docker.com/",
-    category: "devOps",
+    category: "devops",
   },
   {
     id: "t13",
@@ -84,5 +84,11 @@ export const TECHNOS = [
     title: "MYSQL",
     link: "https://www.mysql.com/",
     category: "database",
+  },
+  {
+    id: "t17",
+    title: "React native",
+    link: "https://reactnative.dev/",
+    category: "mobile",
   },
 ];

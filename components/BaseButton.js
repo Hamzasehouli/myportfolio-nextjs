@@ -3,7 +3,11 @@ import Class from "./BaseButton.module.css";
 const BaseButton = function (props) {
   if (props.mode === "button") {
     return (
-      <button className={Class[props.state]} type={props.type}>
+      <button
+        onClick={props.onClick}
+        className={Class[props.state]}
+        type={props.type}
+      >
         {props.children}
       </button>
     );

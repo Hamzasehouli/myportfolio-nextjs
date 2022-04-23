@@ -2,8 +2,12 @@ import BasePage from "../../components/BasePage";
 import BaseButton from "../../components/BaseButton";
 import { useState } from "react";
 import { TECHNOS as technos } from "../../data/techsList";
+import { MyStory } from "../../data/myStory";
 const About = function () {
-  let markup = technos.map((t) => (
+  const [list, setList] = useState(technos);
+  const [suite, setSuite] = useState(false);
+  const [active, setActive] = useState("all");
+  let markup = list.map((t) => (
     <li key={t.id}>
       <a target="_blank" className="links" href={t.link}>
         {t.title}
@@ -29,46 +33,112 @@ const About = function () {
         </a>
         .
       </p>
-      <p className="suite">
-        In 2016, I was attempting to get an online appointment with the german
-        consulat in Rabat to apply for stduent visa. Back then every thing was
-        smooth excpet taht appointment, after just couple of seconds all the
-        available appointmend listed on the consulat website g'one', this
-        problem had last roughly a month without success. In the same period, I
-        was self-teaching myself HTML on the famous french platform
-        OPENCLASSROM, it offered a free HTML course.
-        <br />
-        The knowledge that I had gained during my learnig journey, helped my to
-        figure out on my own how to prefill the required fileds in advance and
-        remove the annoying captcha. Since then my passion for web development
-        has borned and I dopted as my hobby until 2019 when I decided to make
-        the web and mobile development as a professional carrer.
-      </p>
-      <BaseButton mode="button" type="button" state="antighost">
-        Read more . . .
+      <p className={!suite ? "suite" : ""}>{MyStory}</p>
+      <BaseButton
+        onClick={() => setSuite(!suite)}
+        mode="button"
+        type="button"
+        state="antighost"
+      >
+        {suite ? "Collapse" : "Read more . . ."}
       </BaseButton>
       <p>Here are a few technologies I’ve been working with recently:</p>
       <ul className="menu">
         <li>
           <button
-            onClick={() => setList("all")}
-            className="active"
+            className={active === "all" && "active"}
+            onClick={() => {
+              setList(technos);
+              setActive("all");
+            }}
             type="button"
           >
             All
           </button>
         </li>
         <li>
-          <button type="button">Frontend</button>
+          <button
+            onClick={() => {
+              setList(technos.filter((t) => t.category === "frontend"));
+              setActive("frontend");
+            }}
+            className={active === "frontend" && "active"}
+            type="button"
+          >
+            Frontend
+          </button>
         </li>
         <li>
-          <button type="button">Backend</button>
+          <button
+            className={active === "backend" && "active"}
+            onClick={() => {
+              setList(technos.filter((t) => t.category === "backend"));
+              setActive("backend");
+            }}
+            type="button"
+          >
+            Backend
+          </button>
         </li>
         <li>
-          <button type="button">DevOps</button>
+          <button
+            className={active === "devops" && "active"}
+            onClick={() => {
+              setList(technos.filter((t) => t.category === "devops"));
+              setActive("devops");
+            }}
+            type="button"
+          >
+            DevOps
+          </button>
         </li>
         <li>
-          <button type="button">Others</button>
+          <button
+            className={active === "uiux" && "active"}
+            onClick={() => {
+              setList(technos.filter((t) => t.category === "uiux"));
+              setActive("uiux");
+            }}
+            type="button"
+          >
+            Ui/UX
+          </button>
+        </li>
+        <li>
+          <button
+            className={active === "database" && "active"}
+            onClick={() => {
+              setList(technos.filter((t) => t.category === "database"));
+              setActive("database");
+            }}
+            type="button"
+          >
+            Database{" "}
+          </button>
+        </li>
+        <li>
+          <button
+            className={active === "mobile" && "active"}
+            onClick={() => {
+              setList(technos.filter((t) => t.category === "mobile"));
+              setActive("mobile");
+            }}
+            type="button"
+          >
+            Mobile
+          </button>
+        </li>
+        <li>
+          <button
+            className={active === "others" && "active"}
+            onClick={() => {
+              setList(technos.filter((t) => t.category === "others"));
+              setActive("others");
+            }}
+            type="button"
+          >
+            Others
+          </button>
         </li>
       </ul>
       <div>
