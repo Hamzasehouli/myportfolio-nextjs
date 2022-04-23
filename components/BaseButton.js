@@ -17,6 +17,17 @@ const BaseButton = function (props) {
         <a className={Class[props.state]}>{props.children}</a>
       </Link>
     );
+  } else if (props.mode === "standard") {
+    return (
+      <a
+        target="_blank"
+        rel="noreferrer"
+        href={props.to}
+        className={Class[props.state]}
+      >
+        {props.children}
+      </a>
+    );
   }
 };
 

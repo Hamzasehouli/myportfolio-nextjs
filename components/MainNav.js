@@ -4,7 +4,6 @@ import { useRouter } from "next/router";
 import BaseButton from "./BaseButton";
 import Image from "next/image";
 const MainNav = function (props) {
-  const router = useRouter();
   return (
     <nav className={Class.nav}>
       <Link href="/">
@@ -33,7 +32,7 @@ const MainNav = function (props) {
           </BaseButton>
         </li>
         <li>
-          <BaseButton to="/cv-hamza.sehouli.pdf" mode="anchor" state="flat">
+          <BaseButton to="/cv-hamza-sehouli.pdf" mode="standard" state="flat">
             Resume
           </BaseButton>
         </li>
