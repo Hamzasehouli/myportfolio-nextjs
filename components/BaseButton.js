@@ -1,4 +1,4 @@
-import Link from "next/Link";
+import Link from "next/link";
 import Class from "./BaseButton.module.css";
 const BaseButton = function (props) {
   if (props.mode === "button") {

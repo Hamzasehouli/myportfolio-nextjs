@@ -1,5 +1,5 @@
 import Class from "./MainNav.module.css";
-import Link from "next/Link";
+import Link from "next/link";
 import { useRouter } from "next/router";
 import BaseButton from "./BaseButton";
 import Image from "next/image";
