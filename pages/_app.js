@@ -6,7 +6,7 @@ import Image from "next/image";
 function MyApp({ Component, pageProps }) {
   const [start, setStart] = useState(
     <div className="splash">
-      <Image width={100} height={100} src="/Logo.svg" />
+      <Image alt="" width={100} height={100} src="/Logo.svg" />
     </div>
   );
 

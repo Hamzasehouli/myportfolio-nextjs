@@ -12,16 +12,15 @@ const About = function () {
 
   const TechList = list.map((t) => (
     <li key={t.id}>
-      <a target="_blank" className="links" href={t.link}>
+      <a target="_blank" rel="noreferrer" className="links" href={t.link}>
         {t.title}
       </a>
     </li>
   ));
 
   const MenuButtons = menu.map((m) => (
-    <li>
+    <li key={m.id}>
       <button
-        key={m.id}
         onClick={() => {
           setList(
             m.title !== "all"
@@ -29,6 +28,7 @@ const About = function () {
               : technos
           );
           setActive(m.title);
+          setSuite(false);
         }}
         className={active === m.title && "active"}
         type="button"
@@ -44,7 +44,7 @@ const About = function () {
         <div style={{ width: "60%" }}>
           <div className="myself">
             <p>
-              I'm a Fullstack web and mobile developer Based in Tangier,
+              I am a Fullstack web and mobile developer Based in Tangier,
               Morocco. I like to code things from scratch and enjoy bringing
               ideas into real world projects.
               <br />
@@ -53,12 +53,18 @@ const About = function () {
               <a
                 className="links"
                 target={"_blank"}
+                rel="noreferrer"
                 href="https://reactnative.dev"
               >
                 react-native
               </a>{" "}
               and{" "}
-              <a className="links" target={"_blank"} href="https://laravel.com">
+              <a
+                className="links"
+                target={"_blank"}
+                rel="noreferrer"
+                href="https://laravel.com"
+              >
                 laravel
               </a>
               .

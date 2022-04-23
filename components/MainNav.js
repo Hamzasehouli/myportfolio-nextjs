@@ -33,7 +33,7 @@ const MainNav = function (props) {
           </BaseButton>
         </li>
         <li>
-          <BaseButton type="button" mode="button" state="flat">
+          <BaseButton to="/cv-hamza.sehouli.pdf" mode="anchor" state="flat">
             Resume
           </BaseButton>
         </li>
