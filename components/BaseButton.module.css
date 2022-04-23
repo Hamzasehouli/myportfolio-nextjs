@@ -19,6 +19,11 @@
   color: var(--color-secondary);
 }
 
+.antighost {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+}
+
 .empty {
   background-color: var(--color-primary);
   color: var(--color-secondary);

@@ -17,3 +17,18 @@
 .suite {
   display: none;
 }
+
+.menu {
+  display: flex;
+  margin: 2rem 0;
+}
+
+.menu li > * {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  margin-right: 2rem;
+}
+
+.active {
+  border-bottom: 1.5px solid var(--color-secondary);
+}
