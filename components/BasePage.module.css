@@ -12,3 +12,8 @@
   left: 0;
   background-color: var(--color-secondary);
 }
+
+.description {
+  width: 65%;
+  margin-top: 3rem;
+}
