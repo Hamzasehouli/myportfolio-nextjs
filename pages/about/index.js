@@ -15,7 +15,31 @@ const About = function () {
     },
     {
       id: "m2",
-      title: "all",
+      title: "frontend",
+    },
+    {
+      id: "m3",
+      title: "backend",
+    },
+    {
+      id: "m4",
+      title: "database",
+    },
+    {
+      id: "m5",
+      title: "devops",
+    },
+    {
+      id: "m6",
+      title: "uiux",
+    },
+    {
+      id: "m7",
+      title: "mobile",
+    },
+    {
+      id: "m8",
+      title: "others",
     },
   ];
   let markup = list.map((t) => (
@@ -23,6 +47,26 @@ const About = function () {
       <a target="_blank" className="links" href={t.link}>
         {t.title}
       </a>
+    </li>
+  ));
+
+  const menuButton = menu.map((m) => (
+    <li>
+      <button
+        key={m.id}
+        onClick={() => {
+          setList(
+            m.title !== "all"
+              ? technos.filter((t) => t.category === m.title)
+              : technos
+          );
+          setActive(m.title);
+        }}
+        className={active === m.title && "active"}
+        type="button"
+      >
+        {m.title[0].toLocaleUpperCase() + m.title.slice(1)}
+      </button>
     </li>
   ));
 
@@ -55,112 +99,14 @@ const About = function () {
             type="button"
             state="antighost"
           >
-            {suite ? "Collapse" : "Read more . . ."}
+            {suite ? ". . . collapse" : "Read more . . ."}
           </BaseButton>
         </div>
       </div>
       <p style={{ marginTop: "5rem" }}>
         Here are a few technologies I’ve been working with recently:
       </p>
-      <ul className="menu">
-        <li>
-          <button
-            className={active === "all" && "active"}
-            onClick={() => {
-              setList(technos);
-              setActive("all");
-              setSuite(false);
-            }}
-            type="button"
-          >
-            All
-          </button>
-        </li>
-        <li>
-          <button
-            onClick={() => {
-              setList(technos.filter((t) => t.category === "frontend"));
-              setActive("frontend");
-            }}
-            className={active === "frontend" && "active"}
-            type="button"
-          >
-            Frontend
-          </button>
-        </li>
-        <li>
-          <button
-            className={active === "backend" && "active"}
-            onClick={() => {
-              setList(technos.filter((t) => t.category === "backend"));
-              setActive("backend");
-            }}
-            type="button"
-          >
-            Backend
-          </button>
-        </li>
-        <li>
-          <button
-            className={active === "devops" && "active"}
-            onClick={() => {
-              setList(technos.filter((t) => t.category === "devops"));
-              setActive("devops");
-            }}
-            type="button"
-          >
-            DevOps
-          </button>
-        </li>
-        <li>
-          <button
-            className={active === "uiux" && "active"}
-            onClick={() => {
-              setList(technos.filter((t) => t.category === "uiux"));
-              setActive("uiux");
-            }}
-            type="button"
-          >
-            Ui/UX
-          </button>
-        </li>
-        <li>
-          <button
-            className={active === "database" && "active"}
-            onClick={() => {
-              setList(technos.filter((t) => t.category === "database"));
-              setActive("database");
-            }}
-            type="button"
-          >
-            Database{" "}
-          </button>
-        </li>
-        <li>
-          <button
-            className={active === "mobile" && "active"}
-            onClick={() => {
-              setList(technos.filter((t) => t.category === "mobile"));
-              setActive("mobile");
-            }}
-            type="button"
-          >
-            Mobile
-          </button>
-        </li>
-        <li>
-          <button
-            className={active === "others" && "active"}
-            onClick={() => {
-              setList(technos.filter((t) => t.category === "others"));
-              setActive("others");
-            }}
-            type="button"
-          >
-            Others
-          </button>
-        </li>
-      </ul>
+      <ul className="menu">{menuButton}</ul>
       <div>
         <ul className="techs">{markup}</ul>
       </div>

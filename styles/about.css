@@ -34,5 +34,30 @@
 }
 
 .active {
-  border-bottom: 1.5px solid var(--color-secondary);
+  border-bottom: 1.5px solid transparent;
+  position: relative;
+}
+
+.active::after {
+  content: "";
+  position: absolute;
+  animation-name: menu;
+  animation-duration: 0.5s;
+  top: 109%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-secondary);
+}
+
+@keyframes menu {
+  from {
+    opacity: 0;
+    width: 0;
+  }
+
+  to {
+    opacity: 1;
+    width: 100%;
+  }
 }
