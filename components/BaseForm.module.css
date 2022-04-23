@@ -1,10 +1,52 @@
 .form {
   width: 70%;
-  background-color: red;
+  margin: 5rem 0;
 }
 
 .input {
+  flex: 1;
 }
 
 .textarea {
+  height: 20rem;
+  flex: 1;
+}
+
+.input,
+.textarea {
+  background-color: var(--color-primary);
+  border: none;
+  outline: none;
+  border: 0.2px solid var(--color-secondary);
+  margin: 0.6rem;
+  padding: 1rem;
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+.input:focus,
+.textarea:focus {
+  border: 1px solid var(--color-light);
+}
+.input::placeholder,
+.textarea::placeholder {
+  font-size: inherit;
+  color: var(--color-light);
+  opacity: 0.5;
+}
+
+.input,
+.btn {
+  height: 5rem;
+}
+
+.entry {
+  display: flex;
+  width: 100%;
+}
+
+.btn {
+  margin-top: 3rem;
+  margin-left: 0.6rem;
 }
