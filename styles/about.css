@@ -61,3 +61,48 @@
     width: 100%;
   }
 }
+
+.personal-image {
+  background-image: url("../public/hamza-sehouli-image.jpg");
+  width: 29rem;
+  height: 29rem;
+  background-size: cover;
+  background-position: center;
+  border-radius: 3px;
+  position: relative;
+  margin: 4rem 0;
+}
+
+.personal-image::before {
+  top: -10px;
+  right: -10px;
+  background-color: var(--color-secondary-light);
+  z-index: -9;
+}
+
+.personal-image::after,
+.personal-image::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border-radius: inherit;
+}
+
+.personal-image::after {
+  transition: all 0.2s;
+  background-color: var(--color-secondary-light);
+}
+
+.personal-image:hover::after {
+  background-color: transparent;
+}
+.personal-image:hover::before {
+  right: 10px;
+  top: 10px;
+}
+
+.about-section {
+  display: flex;
+  justify-content: space-between;
+}
