@@ -4,22 +4,27 @@ import Layout from "../components/Layout";
 import { useLayoutEffect, useState } from "react";
 import Image from "next/image";
 function MyApp({ Component, pageProps }) {
-  const [start, setStart] = useState(
-    <div className="splash">
-      <Image alt="" width={100} height={100} src="/Logo.svg" />
-    </div>
-  );
+  const [splash, setSplash] = useState(true);
 
-  setTimeout(() => {
-    setStart(
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
+  useLayoutEffect(() => {
+    setTimeout(() => {
+      setSplash(false);
+    }, 3000);
+  }, []);
+
+  if (splash) {
+    return (
+      <div className="splash">
+        <Image alt="" width={100} height={100} src="/Logo.svg" />
+      </div>
     );
-  }, 3000);
-  // useLayoutEffect(() => {}, [start]);
+  }
 
-  return start;
+  return (
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
+  );
 }
 
 export default MyApp;
