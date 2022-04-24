@@ -1,9 +1,12 @@
 import MainNav from "./MainNav";
 import Footer from "./Footer";
 import BaseSection from "./BaseSection";
+import { useRouter } from "next/router";
 const Layout = function (props) {
+  const router = useRouter();
+  let footer = router.pathname !== "/" ? <Footer></Footer> : "";
   return (
-    <div>
+    <>
       <header>
         <BaseSection>
           <MainNav />
@@ -15,7 +18,11 @@ const Layout = function (props) {
         </BaseSection>
         <ul className="icons">
           <li>
-            <a rel="noreferrer" target="_blank" href="https://github.com/Hamzasehouli">
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href="https://github.com/Hamzasehouli"
+            >
               <svg className="icon">
                 <use href="/sprite.svg#icon-github"></use>
               </svg>
@@ -85,8 +92,8 @@ const Layout = function (props) {
           </li>
         </ul>
       </main>
-      <Footer></Footer>
-    </div>
+      {footer}
+    </>
   );
 };
 
