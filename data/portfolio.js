@@ -59,7 +59,7 @@ export const portfolio = [
     color: "rgba(222,222,222,.5)",
   },
   {
-    id: "4w",
+    id: "5w",
     title: "Interbooks",
     link: "https://interbooks.herokuapp.com",
     imageUrl: "/projects/img/interbooks.png",
@@ -78,7 +78,7 @@ export const portfolio = [
     color: "rgba(222,222,222,.5)",
   },
   {
-    id: "4w",
+    id: "6w",
     title: "Sublime cafe",
     link: "https://sublime-cafe.netlify.app",
     imageUrl: "/projects/img/sublimecafe-1.png",
@@ -94,7 +94,7 @@ export const portfolio = [
     color: "rgba(222,222,222,.5)",
   },
   {
-    id: "5w",
+    id: "7w",
     title: "FWDR",
     link: "https://freewebdevresources.netlify.app",
     imageUrl: "/projects/img/frwr.png",
@@ -110,7 +110,7 @@ export const portfolio = [
     color: "rgba(222,222,222,.5)",
   },
   {
-    id: "6w",
+    id: "8w",
     title: "Bynd shoes",
     link: "https://bynd-shoes.netlify.app",
     imageUrl: "/projects/img/bynd.png",
@@ -122,7 +122,7 @@ export const portfolio = [
     color: "rgba(222,222,222,.5)",
   },
   {
-    id: "7w",
+    id: "9w",
     title: "Portfolio",
     link: "https://hamza-sehouli.vercel.app",
     imageUrl: "/projects/hamza-sehouli-portfolio.png",

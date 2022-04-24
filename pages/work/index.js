@@ -1,5 +1,4 @@
 import BasePage from "../../components/BasePage";
-import Image from "next/image";
 import { portfolio } from "../../data/portfolio";
 
 const Work = function () {
