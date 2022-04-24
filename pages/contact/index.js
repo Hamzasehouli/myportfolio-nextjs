@@ -6,7 +6,7 @@ const Contact = function () {
   return (
     <BasePage title="Contact">
       <Head>
-        <title>Hamza Sehouli | Let's us hear from you</title>
+        <title>Hamza Sehouli | Let&apos;s us hear from you</title>
       </Head>
       <section style={{ width: "60%" }}>
         <p>
