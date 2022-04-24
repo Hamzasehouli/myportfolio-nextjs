@@ -2,11 +2,15 @@ import MainNav from "./MainNav";
 import Footer from "./Footer";
 import BaseSection from "./BaseSection";
 import { useRouter } from "next/router";
+import Head from "next/head";
 const Layout = function (props) {
   const router = useRouter();
   let footer = router.pathname !== "/" ? <Footer></Footer> : "";
   return (
     <>
+      <Head>
+        <link rel="shortcut icon" href="/Logo.svg" />
+      </Head>
       <header>
         <BaseSection>
           <MainNav />
