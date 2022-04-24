@@ -23,9 +23,9 @@ const Work = function () {
             return (
               <li
                 style={{
-                  // backgroundColor: "var(--color-secondary)",
-                  color: "var(--color-light)",
-                  // padding: "2px 9px",
+                  backgroundColor: "var(--color-secondary-light)",
+                  color: "var(--color-primary)",
+                  padding: "2px 9px",
                   display: "inline-block",
                   borderRadius: "100px",
                   marginRight: "12px",
@@ -39,6 +39,13 @@ const Work = function () {
             );
           })}
         </ul>
+        <p
+          style={{
+            marginBottom: "auto",
+          }}
+        >
+          {w.description}
+        </p>
         <div className="links-container">
           <a href={w.github} target={"_blank"} rel="noreferrer">
             <svg className="work-icon">
@@ -47,7 +54,7 @@ const Work = function () {
           </a>
           <a href={w.link} target={"_blank"} rel="noreferrer">
             <svg className="work-icon">
-              <use href="/projects/img/sprite.svg#icon-web"></use>
+              <use href="/sprite.svg#icon-launch"></use>
             </svg>
           </a>
         </div>

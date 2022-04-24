@@ -6,7 +6,8 @@ export const portfolio = [
     imageUrl: "/projects/img/uichroma.png",
     github: "sss",
     techs: ["vue"],
-    descritpion: "ssssssssssss",
+    description:
+      "With Uichroma you can pick colors that fit you better for your next project, get tints shades and also complementary colors set, in addition a nice gradient generator waits for you, yo can create fancy gradients linear or radial ones, all in one resource.",
     category: "Frontend",
     color: "rgba(222,222,222,.5)",
   },
@@ -17,7 +18,8 @@ export const portfolio = [
     imageUrl: "/projects/happymeal.png",
     github: "/projects/happymeal.png",
     techs: ["nuxt", "api"],
-    descritpion: "ssssssssssss",
+    description:
+      "Happymeal is a cooking recipes app. Nuxt.js, which is a vue.js framework, used to solve some vue.js limitations like SEO and some other helpful features. Beside nuxt.js, I chose themealdb.com as core api source, as it commes with handy routes like categories, countries etc....",
     category: "Frontend",
     color: "rgba(222,222,222,.5)",
   },
@@ -28,7 +30,8 @@ export const portfolio = [
     imageUrl: "/projects/img/lodging.png",
     github: "sss",
     techs: ["vue", "rapid api", "fiebase"],
-    descritpion: "ssssssssssss",
+    description:
+      "Lodgingnbed is a hotel reservation app built using vue.js framework, firebase to store cities for the autocomplition, booking api from third party the RAPIDAPI, and other api from the same site for currency conversion",
     category: "Frontend",
     color: "rgba(222,222,222,.5)",
   },
@@ -39,7 +42,8 @@ export const portfolio = [
     imageUrl: "/projects/img/wildwaterr.png",
     github: "sss",
     techs: ["vue", "firebase"],
-    descritpion: "ssssssssssss",
+    description:
+      "Wildwater is a landing page of a fiction water enterprise, I called it Wildwater.To develope this website, I user vue.js as main web technologie",
     category: "Frontend",
     color: "rgba(222,222,222,.5)",
   },
@@ -50,7 +54,8 @@ export const portfolio = [
     imageUrl: "/projects/img/interbooks.png",
     github: "sss",
     techs: ["node", "express", "mongoDB", "mongoose", "pug", "heroku"],
-    descritpion: "ssssssssssss",
+    description:
+      "Interbooks is a server side rendering e-commerce web app for selling books online, is developped using node.js with its handy framework express.js, mongoDb Database and pug template engine to render the views",
     category: "Frontend",
     color: "rgba(222,222,222,.5)",
   },
@@ -61,7 +66,8 @@ export const portfolio = [
     imageUrl: "/projects/img/sublimecafe-1.png",
     github: "sss",
     techs: ["html", "css", "javascript"],
-    descritpion: "ssssssssssss",
+    description:
+      "Sublime Cafe is a coffee shop located in Tangier since 2015, offers a wide variety of products, from breakfasts, sandwiches, salads, desserts to hot and cold drinks.",
     category: "Frontend",
     color: "rgba(222,222,222,.5)",
   },
@@ -72,7 +78,8 @@ export const portfolio = [
     imageUrl: "/projects/img/frwr.png",
     github: "sss",
     techs: ["vue", "firebase"],
-    descritpion: "ssssssssssss",
+    description:
+      "Free web dev resrources provides some helpful resources to web devevelopers, developed with vue and firebase.",
     category: "Frontend",
     color: "rgba(222,222,222,.5)",
   },
@@ -83,7 +90,8 @@ export const portfolio = [
     imageUrl: "/projects/img/bynd.png",
     github: "sss",
     techs: ["react"],
-    descritpion: "ssssssssssss",
+    description:
+      "Bynd shoes is online retail store that sells sneaker and shoes, is developedwith pure react library.",
     category: "Frontend",
     color: "rgba(222,222,222,.5)",
   },
@@ -94,7 +102,8 @@ export const portfolio = [
     imageUrl: "/projects/hamza-sehouli-portfolio.png",
     github: "https://github.com/Hamzasehouli/myportfolio-nextjs",
     techs: ["next.js"],
-    descritpion: "ssssssssssss",
+    description:
+      "This is my personal portfolio your are on right now, I made ths portfoiol using the prominent react framework next,js",
     category: "Frontend",
     color: "rgba(222,222,222,.5)",
   },
