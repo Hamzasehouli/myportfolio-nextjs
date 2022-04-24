@@ -22,6 +22,7 @@ const Work = function () {
           {w.techs.map((t) => {
             return (
               <li
+                key={t.id}
                 style={{
                   backgroundColor: "var(--color-secondary-light)",
                   color: "var(--color-primary)",
@@ -34,7 +35,7 @@ const Work = function () {
                   textTransform: "capitalize",
                 }}
               >
-                {t}
+                {t.title}
               </li>
             );
           })}
