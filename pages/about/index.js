@@ -70,7 +70,7 @@ const About = function () {
               .
             </p>
 
-            <p className={!suite ? "suite" : ""}>{MyStory}</p>
+            <div className={!suite ? "suite" : ""}>{MyStory}</div>
 
             <div style={{ margin: "1.4rem 0" }}>
               <BaseButton
