@@ -4,7 +4,7 @@ export const portfolio = [
     title: "Uichroma",
     link: "https://uichroma.netlify.app",
     imageUrl: "/projects/img/uichroma.png",
-    github: "sss",
+    github: "https://github.com/Hamzasehouli/uichroma-dev-vuejs",
     techs: ["vue"],
     description:
       "With Uichroma you can pick colors that fit you better for your next project, get tints shades and also complementary colors set, in addition a nice gradient generator waits for you, yo can create fancy gradients linear or radial ones, all in one resource.",
@@ -16,7 +16,7 @@ export const portfolio = [
     title: "Happymeal",
     link: "https://happymeal.netlify.app",
     imageUrl: "/projects/happymeal.png",
-    github: "/projects/happymeal.png",
+    github: "https://github.com/Hamzasehouli/happymeal-dev-nuxt-api",
     techs: ["nuxt", "api"],
     description:
       "Happymeal is a cooking recipes app. Nuxt.js, which is a vue.js framework, used to solve some vue.js limitations like SEO and some other helpful features. Beside nuxt.js, I chose themealdb.com as core api source, as it commes with handy routes like categories, countries etc....",
@@ -28,7 +28,7 @@ export const portfolio = [
     title: "Lodgingnbed",
     link: "https://lodgingnbed.netlify.app",
     imageUrl: "/projects/img/lodging.png",
-    github: "sss",
+    github: "https://github.com/Hamzasehouli/lodgingnbed-dev-vuejs-firebase",
     techs: ["vue", "rapid api", "fiebase"],
     description:
       "Lodgingnbed is a hotel reservation app built using vue.js framework, firebase to store cities for the autocomplition, booking api from third party the RAPIDAPI, and other api from the same site for currency conversion",
@@ -40,7 +40,7 @@ export const portfolio = [
     title: "Wildwater",
     link: "https://wildwater.netlify.app",
     imageUrl: "/projects/img/wildwaterr.png",
-    github: "sss",
+    github: "https://github.com/Hamzasehouli/wildwater-dev-vuejs",
     techs: ["vue", "firebase"],
     description:
       "Wildwater is a landing page of a fiction water enterprise, I called it Wildwater.To develope this website, I user vue.js as main web technologie",
@@ -52,7 +52,7 @@ export const portfolio = [
     title: "Interbooks",
     link: "https://interbooks.herokuapp.com",
     imageUrl: "/projects/img/interbooks.png",
-    github: "sss",
+    github: "https://github.com/Hamzasehouli/interbooks",
     techs: ["node", "express", "mongoDB", "mongoose", "pug", "heroku"],
     description:
       "Interbooks is a server side rendering e-commerce web app for selling books online, is developped using node.js with its handy framework express.js, mongoDb Database and pug template engine to render the views",
@@ -64,7 +64,7 @@ export const portfolio = [
     title: "Sublime cafe",
     link: "https://sublime-cafe.netlify.app",
     imageUrl: "/projects/img/sublimecafe-1.png",
-    github: "sss",
+    github: "https://github.com/Hamzasehouli/sublime",
     techs: ["html", "css", "javascript"],
     description:
       "Sublime Cafe is a coffee shop located in Tangier since 2015, offers a wide variety of products, from breakfasts, sandwiches, salads, desserts to hot and cold drinks.",
@@ -76,7 +76,8 @@ export const portfolio = [
     title: "FWDR",
     link: "https://freewebdevresources.netlify.app",
     imageUrl: "/projects/img/frwr.png",
-    github: "sss",
+    github:
+      "https://github.com/Hamzasehouli/freewebdevresources-vue-auth-firebase",
     techs: ["vue", "firebase"],
     description:
       "Free web dev resrources provides some helpful resources to web devevelopers, developed with vue and firebase.",
@@ -88,7 +89,7 @@ export const portfolio = [
     title: "Bynd shoes",
     link: "https://bynd-shoes.netlify.app",
     imageUrl: "/projects/img/bynd.png",
-    github: "sss",
+    github: "https://github.com/Hamzasehouli/bynd",
     techs: ["react"],
     description:
       "Bynd shoes is online retail store that sells sneaker and shoes, is developedwith pure react library.",
