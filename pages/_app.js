@@ -1,12 +1,12 @@
 import "../styles/globals.css";
 import "../styles/about.css";
 import Layout from "../components/Layout";
-import { useLayoutEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 function MyApp({ Component, pageProps }) {
   const [splash, setSplash] = useState(true);
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     setTimeout(() => {
       setSplash(false);
     }, 3000);

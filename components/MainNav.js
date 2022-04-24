@@ -1,19 +1,20 @@
 import Class from "./MainNav.module.css";
 import Link from "next/link";
-import { useRouter } from "next/router";
 import BaseButton from "./BaseButton";
 import Image from "next/image";
 const MainNav = function (props) {
   return (
     <nav className={Class.nav}>
-      <Link href="/">
-        <Image
-          alt="Hamza Sehouli portfolio logo"
-          width={70}
-          height={70}
-          className="logo"
-          src="/Logo.svg"
-        />
+      <Link href="/" passHref>
+        <a>
+          <Image
+            alt="Hamza Sehouli portfolio logo"
+            width={70}
+            height={70}
+            className="logo"
+            src="/Logo.svg"
+          />
+        </a>
       </Link>
       <ul className={Class.list}>
         <li>

@@ -30,7 +30,7 @@ const About = function () {
           setActive(m.title);
           setSuite(false);
         }}
-        className={active === m.title && "active"}
+        className={active === m.title ? "active" : ""}
         type="button"
       >
         {m.title[0].toLocaleUpperCase() + m.title.slice(1)}
