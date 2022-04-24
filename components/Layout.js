@@ -15,7 +15,7 @@ const Layout = function (props) {
         </BaseSection>
         <ul className="icons">
           <li>
-            <a target="_blank" href="https://github.com/Hamzasehouli">
+            <a rel="noreferrer" target="_blank" href="https://github.com/Hamzasehouli">
               <svg className="icon">
                 <use href="/sprite.svg#icon-github"></use>
               </svg>
