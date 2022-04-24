@@ -113,7 +113,7 @@ export const portfolio = [
     id: "8w",
     title: "Bynd shoes",
     link: "https://bynd-shoes.netlify.app",
-    imageUrl: "./projects/img/bynd.png",
+    imageUrl: "../../projects/img/bynd.png",
     github: "https://github.com/Hamzasehouli/bynd",
     techs: [{ id: "tech1", title: "react" }],
     description:
