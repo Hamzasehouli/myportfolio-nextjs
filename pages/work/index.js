@@ -67,7 +67,7 @@ const Work = function () {
   return (
     <BasePage title="My achievments">
       <Head>
-        <title>My achievments</title>
+        <title>Hamza Sehouli | My achievments</title>
       </Head>
       <ul className="work-list">{Markup}</ul>
     </BasePage>

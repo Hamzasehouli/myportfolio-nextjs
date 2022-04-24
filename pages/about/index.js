@@ -42,7 +42,7 @@ const About = function () {
   return (
     <BasePage title="About me">
       <Head>
-        <title>About me</title>
+        <title>Hamza Sehouli | About me</title>
       </Head>
       <section className="about-section">
         <div style={{ width: "60%" }}>
