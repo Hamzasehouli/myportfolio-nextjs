@@ -3,7 +3,7 @@ export const portfolio = [
     id: "1w",
     title: "Uichroma",
     link: "https://uichroma.netlify.app",
-    imageUrl: "/projects/img/uichroma.png",
+    imageUrl: "/projects/img/uichroma.PNG",
     github: "https://github.com/Hamzasehouli/uichroma-dev-vuejs",
     techs: [{ id: "tech1", title: "vue" }],
     description:
@@ -15,7 +15,7 @@ export const portfolio = [
     id: "2w",
     title: "Happymeal",
     link: "https://happymeal.netlify.app",
-    imageUrl: "/projects/happymeal.png",
+    imageUrl: "/projects/happymeal.PNG",
     github: "https://github.com/Hamzasehouli/happymeal-dev-nuxt-api",
     techs: [
       { id: "tech1", title: "vue" },
@@ -31,7 +31,7 @@ export const portfolio = [
     id: "3w",
     title: "Lodgingnbed",
     link: "https://lodgingnbed.netlify.app",
-    imageUrl: "/projects/img/lodging.png",
+    imageUrl: "/projects/img/lodging.PNG",
     github: "https://github.com/Hamzasehouli/lodgingnbed-dev-vuejs-firebase",
     techs: [
       { id: "tech1", title: "vue" },
@@ -47,7 +47,7 @@ export const portfolio = [
     id: "4w",
     title: "Wildwater",
     link: "https://wildwater.netlify.app",
-    imageUrl: "/projects/img/wildwaterr.png",
+    imageUrl: "/projects/img/wildwaterr.PNG",
     github: "https://github.com/Hamzasehouli/wildwater-dev-vuejs",
     techs: [
       { id: "tech1", title: "vue" },
@@ -62,7 +62,7 @@ export const portfolio = [
     id: "5w",
     title: "Interbooks",
     link: "https://interbooks.herokuapp.com",
-    imageUrl: "/projects/img/interbooks.png",
+    imageUrl: "/projects/img/interbooks.PNG",
     github: "https://github.com/Hamzasehouli/interbooks",
     techs: [
       { id: "tech1", title: "node" },
@@ -81,7 +81,7 @@ export const portfolio = [
     id: "6w",
     title: "Sublime cafe",
     link: "https://sublime-cafe.netlify.app",
-    imageUrl: "/projects/img/sublimecafe-1.png",
+    imageUrl: "/projects/img/sublimecafe-1.PNG",
     github: "https://github.com/Hamzasehouli/sublime",
     techs: [
       { id: "tech1", title: "html" },
@@ -97,7 +97,7 @@ export const portfolio = [
     id: "7w",
     title: "FWDR",
     link: "https://freewebdevresources.netlify.app",
-    imageUrl: "/projects/img/frwr.png",
+    imageUrl: "/projects/img/frwr.PNG",
     github:
       "https://github.com/Hamzasehouli/freewebdevresources-vue-auth-firebase",
     techs: [
@@ -125,7 +125,7 @@ export const portfolio = [
     id: "9w",
     title: "Portfolio",
     link: "https://hamza-sehouli.vercel.app",
-    imageUrl: "/projects/hamza-sehouli-portfolio.png",
+    imageUrl: "/projects/hamza-sehouli-portfolio.PNG",
     github: "https://github.com/Hamzasehouli/myportfolio-nextjs",
     techs: [{ id: "tech1", title: "nuxt" }],
     description:
