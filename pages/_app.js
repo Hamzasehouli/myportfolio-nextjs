@@ -1,5 +1,6 @@
 import "../styles/globals.css";
 import "../styles/about.css";
+import "../styles/work.css";
 import Layout from "../components/Layout";
 import { useEffect, useState } from "react";
 import Image from "next/image";

@@ -1,0 +1,19 @@
+.work-list {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+  grid-gap: 2rem;
+  margin: 6rem 0;
+}
+
+.work-item {
+  border-radius: 3px;
+  background-color: var(--color-light);
+  height: 30rem;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.work-item:hover {
+  transform: translateY(-10px);
+}
