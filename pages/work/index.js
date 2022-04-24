@@ -9,14 +9,16 @@ const Work = function () {
         <figure
           className="work-figure"
           style={{
-            backgroundImage: `url('${w.imageUrl}')`,
+            backgroundImage: `url(${w.imageUrl})`,
             backgroundPosition: "center",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             overflow: "hidden",
             objectFit: "cover",
           }}
-        ></figure>
+        >
+          {/* <img src="../../public/projects/img/" */}
+        </figure>
         <ul style={{ margin: "1rem 0" }}>
           {w.techs.map((t) => {
             return (
