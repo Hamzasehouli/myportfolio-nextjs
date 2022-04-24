@@ -10,6 +10,7 @@ const Layout = function (props) {
     <>
       <Head>
         <link rel="shortcut icon" href="/Logo.svg" />
+        <title>Hamza Sehouli</title>
       </Head>
       <header>
         <BaseSection>

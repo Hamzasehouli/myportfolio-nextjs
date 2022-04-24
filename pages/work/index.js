@@ -1,5 +1,6 @@
 import BasePage from "../../components/BasePage";
 import { portfolio } from "../../data/portfolio";
+import Head from "next/head";
 
 const Work = function () {
   const Markup = portfolio.map((w) => {
@@ -65,6 +66,9 @@ const Work = function () {
   });
   return (
     <BasePage title="My achievments">
+      <Head>
+        <title>My achievments</title>
+      </Head>
       <ul className="work-list">{Markup}</ul>
     </BasePage>
   );

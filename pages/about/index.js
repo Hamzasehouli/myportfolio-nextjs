@@ -4,6 +4,7 @@ import { useState } from "react";
 import { TECHNOS as technos } from "../../data/techsList";
 import { menu } from "../../data/menu";
 import { MyStory } from "../../data/myStory";
+import Head from "next/head";
 
 const About = function () {
   const [list, setList] = useState(technos);
@@ -40,6 +41,9 @@ const About = function () {
 
   return (
     <BasePage title="About me">
+      <Head>
+        <title>About me</title>
+      </Head>
       <section className="about-section">
         <div style={{ width: "60%" }}>
           <div className="myself">
