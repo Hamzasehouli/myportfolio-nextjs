@@ -1,26 +1,11 @@
 import BaseButton from "./BaseButton";
 import Classes from "./BaseForm.module.css";
-import { useRef } from "react";
 const BaseForm = function (props) {
-  const name = useRef(null);
-  const email = useRef(null);
-  const subject = useRef(null);
-  const message = useRef(null);
   return (
-    <form
-      onSubmit={(e) => {
-        e.preventDefault();
-        props.onSubmit.call(this, {
-          name: name.current.value,
-          email: email.current.value,
-          subject: subject.current.value,
-          message: message.current.value,
-        });
-      }}
-      className={Classes.form}
-    >
+    <form onSubmit={props.onSubmit} className={Classes.form}>
       <div className={Classes.entry}>
         <input
+          onChange={(v) => props.setName(v.target.value)}
           type="text"
           className={
             props.nameError
@@ -29,9 +14,9 @@ const BaseForm = function (props) {
           }
           placeholder="Name"
           name="name"
-          ref={name}
         />
         <input
+          onChange={(v) => props.setEmail(v.target.value)}
           type={"email"}
           className={
             props.emailError
@@ -40,20 +25,20 @@ const BaseForm = function (props) {
           }
           placeholder="Email"
           name="email"
-          ref={email}
         />
       </div>
       <div className={Classes.entry}>
         <input
+          onChange={(v) => props.setSubject(v.target.value)}
           type="text"
           className={Classes.input}
           placeholder="Subject"
           name="subject"
-          ref={subject}
         />
       </div>
       <div className={Classes.entry}>
         <textarea
+          onChange={(v) => props.setMessage(v.target.value)}
           className={
             props.messageError
               ? `${Classes.error} ${Classes.textarea} `
@@ -61,7 +46,6 @@ const BaseForm = function (props) {
           }
           placeholder="Message"
           name="message"
-          ref={message}
         ></textarea>
       </div>
       <div className={Classes.btn}>

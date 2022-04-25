@@ -5,6 +5,10 @@ import { useState, useRef, useEffect, useCallback } from "react";
 
 const Contact = function () {
   // const [subjectError, setSubjectError] = useState(true);
+  const [name, setName] = useState();
+  const [email, setEmail] = useState();
+  const [subject, setSubject] = useState();
+  const [message, setMessage] = useState();
   const [nameError, setNameError] = useState(false);
   const [emailError, setEmailError] = useState(false);
   const [messageError, setMessageError] = useState(false);
@@ -27,23 +31,24 @@ const Contact = function () {
     ""
   );
 
-  const handleSubmit = async function (obj) {
+  const handleSubmit = async function (e) {
+    e.preventDefault();
     try {
       setPending(true);
       setStatus({ title: "", ok: false });
-      const { name, email, subject, message } = obj;
 
-      if (name.trim() === "") {
+      if (name === "" || !name) {
         nameErrorModel = true;
       }
       if (
         email === "" ||
+        !email ||
         !email.split("@")[1].includes(".") ||
         !email.includes("@")
       ) {
         emailErrorModel = true;
       }
-      if (message === "") {
+      if (!message || message === "") {
         messageErrorModel = true;
       }
 
@@ -63,16 +68,18 @@ const Contact = function () {
       const res = await fetch("api/sendEmail", {
         method: "POST",
         body: JSON.stringify({
-          ...obj,
+          name,
+          email,
+          subject,
+          message,
         }),
       });
-      console.log(res);
       const data = await res.json();
-      console.log(data);
+      if (!data.ok) throw new Error();
       setStatus({ title: data.message, ok: true });
       setPending(false);
     } catch (err) {
-      setStatus({ title: data.message, ok: false });
+      setStatus({ title: "Email has not been sent", ok: false });
       setPending(false);
     }
   };
@@ -93,7 +100,11 @@ const Contact = function () {
             nameError={nameError}
             emailError={emailError}
             messageError={messageError}
-            onSubmit={(obj) => handleSubmit(obj)}
+            setName={(v) => setName(v)}
+            setEmail={(v) => setEmail(v)}
+            setSubject={(v) => setSubject(v)}
+            setMessage={(v) => setMessage(v)}
+            onSubmit={handleSubmit}
           />
         </div>
       </section>

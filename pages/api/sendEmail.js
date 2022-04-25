@@ -20,6 +20,7 @@ export default async function sendEmail(req, res) {
           <p>Message: ${message}</p>
         </div>`,
     });
+
     res.status(200).json({ message: "Email sent succefully", ok: true });
   } catch (err) {
     res.status(400).json({ message: "Email has not been sent", ok: false });
