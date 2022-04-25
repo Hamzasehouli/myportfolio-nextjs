@@ -5,10 +5,10 @@ import { useState, useRef, useEffect, useCallback } from "react";
 
 const Contact = function () {
   // const [subjectError, setSubjectError] = useState(true);
-  const [name, setName] = useState();
-  const [email, setEmail] = useState();
-  const [subject, setSubject] = useState();
-  const [message, setMessage] = useState();
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
   const [nameError, setNameError] = useState(false);
   const [emailError, setEmailError] = useState(false);
   const [messageError, setMessageError] = useState(false);
@@ -76,6 +76,10 @@ const Contact = function () {
       });
       const data = await res.json();
       if (!data.ok) throw new Error();
+      setName("");
+      setSubject("");
+      setEmail("");
+      setMessage("");
       setStatus({ title: data.message, ok: true });
       setPending(false);
     } catch (err) {
@@ -100,6 +104,10 @@ const Contact = function () {
             nameError={nameError}
             emailError={emailError}
             messageError={messageError}
+            name={name}
+            email={email}
+            subject={subject}
+            message={message}
             setName={(v) => setName(v)}
             setEmail={(v) => setEmail(v)}
             setSubject={(v) => setSubject(v)}

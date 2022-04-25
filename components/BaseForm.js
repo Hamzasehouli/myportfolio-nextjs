@@ -14,10 +14,12 @@ const BaseForm = function (props) {
           }
           placeholder="Name"
           name="name"
+          value={props.name}
         />
         <input
           onChange={(v) => props.setEmail(v.target.value)}
           type={"email"}
+          value={props.email}
           className={
             props.emailError
               ? `${Classes.error} ${Classes.input} `
@@ -31,6 +33,7 @@ const BaseForm = function (props) {
         <input
           onChange={(v) => props.setSubject(v.target.value)}
           type="text"
+          value={props.subject}
           className={Classes.input}
           placeholder="Subject"
           name="subject"
@@ -38,6 +41,7 @@ const BaseForm = function (props) {
       </div>
       <div className={Classes.entry}>
         <textarea
+          value={props.message}
           onChange={(v) => props.setMessage(v.target.value)}
           className={
             props.messageError
