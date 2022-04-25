@@ -8,13 +8,29 @@ const Contact = function () {
   const [nameError, setNameError] = useState(false);
   const [emailError, setEmailError] = useState(false);
   const [messageError, setMessageError] = useState(false);
+  const [pending, setPending] = useState(false);
+  const [status, setStatus] = useState({ title: "", ok: false });
 
   let nameErrorModel = false;
   let emailErrorModel = false;
   let messageErrorModel = false;
+  let formStatus = status ? (
+    <p
+      style={{
+        color: status.ok ? "var(--color-success)" : "var(--color-error)",
+        marginTop: "2rem",
+      }}
+    >
+      {status.title}
+    </p>
+  ) : (
+    ""
+  );
 
   const handleSubmit = async function (obj) {
     try {
+      setPending(true);
+      setStatus({ title: "", ok: false });
       const { name, email, subject, message } = obj;
 
       if (name.trim() === "") {
@@ -39,17 +55,26 @@ const Contact = function () {
         nameErrorModel = false;
         emailErrorModel = false;
         messageErrorModel = false;
+        setStatus({ title: "Please fill all the required fields", ok: false });
+        setPending(false);
         return;
       }
-      console.log("fgooooooo");
 
-      const res = fetch("api/sendEmail", {
+      const res = await fetch("api/sendEmail", {
         method: "POST",
         body: JSON.stringify({
           ...obj,
         }),
       });
-    } catch (err) {}
+      console.log(res);
+      const data = await res.json();
+      console.log(data);
+      setStatus({ title: data.message, ok: true });
+      setPending(false);
+    } catch (err) {
+      setStatus({ title: data.message, ok: false });
+      setPending(false);
+    }
   };
   return (
     <BasePage title="Contact">
@@ -61,12 +86,16 @@ const Contact = function () {
           I am currenty looking for new job opportunities. However if you have a
           request or question, feel free to use this form.
         </p>
-        <BaseForm
-          nameError={nameError}
-          emailError={emailError}
-          messageError={messageError}
-          onSubmit={(obj) => handleSubmit(obj)}
-        />
+        <div>
+          {formStatus}
+          <BaseForm
+            pending={pending}
+            nameError={nameError}
+            emailError={emailError}
+            messageError={messageError}
+            onSubmit={(obj) => handleSubmit(obj)}
+          />
+        </div>
       </section>
     </BasePage>
   );

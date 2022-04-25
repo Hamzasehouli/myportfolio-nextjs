@@ -66,7 +66,7 @@ const BaseForm = function (props) {
       </div>
       <div className={Classes.btn}>
         <BaseButton mode="button" type="submit" state="empty">
-          Send email
+          {props.pending ? "In progress..." : "Send email"}
         </BaseButton>
       </div>
     </form>
