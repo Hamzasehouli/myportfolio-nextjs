@@ -121,22 +121,40 @@ footer {
 }
 
 .icons > *:not(:last-of-type) {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 main {
   position: relative;
 }
 
-.icon {
+.icon,
+.icon-responsive {
   fill: var(--color-light);
+}
+
+.icon {
   width: 2rem;
   height: 2rem;
+}
+
+.icon {
   transition: all 0.3s;
   animation-name: icons;
   animation-duration: 2s;
   animation-delay: 1s;
   animation-fill-mode: backwards;
+}
+
+.icons-responsive {
+  display: none;
+  justify-content: center;
+}
+
+.icon-responsive {
+  width: 10px;
+  height: 10px;
+  margin-right: 1rem;
 }
 @keyframes icons {
   0% {
@@ -206,6 +224,14 @@ main {
     font-size: 1.4rem;
     margin-top: 12px;
   }
+
+  .logo {
+    transform: scale(0.7);
+  }
+  .icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 }
 @media only screen and (max-width: 33rem) {
   .name {
@@ -224,7 +250,40 @@ main {
     width: 100%;
     text-align: center;
   }
+  .icons {
+    display: none;
+  }
+
+  .icons-responsive {
+    display: flex;
+  }
 }
+@media only screen and (max-width: 23rem) {
+  .name {
+    font-size: 2.5rem;
+  }
+  .identity {
+    font-size: 1.5rem;
+  }
+  .description {
+    font-size: 0.9rem;
+    margin-top: 12px;
+  }
+  .name,
+  .identity,
+  .description {
+    width: 100%;
+    text-align: center;
+  }
+
+  .base-main {
+    padding: 1.7rem 0;
+  }
+  .logo {
+    transform: scale(0.5);
+  }
+}
+
 @media only screen and (max-width: 41rem) {
   body {
     font-size: 1.4rem;

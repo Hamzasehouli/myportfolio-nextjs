@@ -38,6 +38,9 @@ const MainNav = function (props) {
           </BaseButton>
         </li>
       </ul>
+      <div className={Class.hamburger}>
+        <span className={Class["hamburger_unity"]}></span>
+      </div>
     </nav>
   );
 };
