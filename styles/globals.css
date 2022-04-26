@@ -69,7 +69,7 @@ footer {
   max-width: 90%;
   margin: 0 auto;
   /* max-height: 100vh; */
-  padding: 4rem 0;
+  padding: 15rem 0;
 }
 
 .hero {
@@ -276,9 +276,9 @@ main {
     text-align: center;
   }
 
-  .base-main {
+  /* .base-main {
     padding: 1.7rem 0;
-  }
+  } */
   .logo {
     transform: scale(0.5);
   }
@@ -298,5 +298,11 @@ main {
   .icons-responsive {
     display: flex;
     justify-content: flex-start;
+  }
+}
+
+@media only screen and (max-height: 13rem) {
+  .logo-responsive {
+    transform: scale(0.5);
   }
 }

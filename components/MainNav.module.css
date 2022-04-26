@@ -1,9 +1,14 @@
 .nav {
   width: 100%;
-  padding: 3rem;
+  padding: 2rem 3rem;
   font-size: inherit;
   animation-name: nav;
   animation-duration: 2s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999999;
+  background-color: var(--color-primary);
 }
 .nav,
 .list {
@@ -23,8 +28,10 @@
   cursor: pointer;
   position: relative;
   height: 2rem;
+  z-index: 99999999;
 }
 .hamburger_unity {
+  cursor: pointer;
   display: block;
   width: 20px;
   height: 2px;
@@ -67,6 +74,12 @@
     display: flex;
   }
 }
+@media only screen and (min-width: 30rem) {
+  .blur,
+  .list-responsive {
+    display: none !important;
+  }
+}
 
 @keyframes nav {
   from {
@@ -78,4 +91,72 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.list-responsive {
+  background-color: var(--color-primary);
+  width: 70%;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+  box-shadow: 2px 2px 20px black;
+  transform: translateX(110%);
+}
+
+.list-responsive > * {
+  margin-bottom: 4rem;
+}
+
+.blur {
+  width: 100%;
+  transform: translateX(110%);
+  z-index: 99;
+  backdrop-filter: blur(4px);
+}
+
+.input-hidden {
+  display: none;
+}
+
+.blur,
+.list-responsive {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  transition: all 0.2s;
+}
+@media only screen and (max-height: 25rem) {
+  .list-responsive > * {
+    margin-bottom: 1rem;
+  }
+}
+@media only screen and (max-height: 13rem) {
+  .list-responsive > * {
+    margin-bottom: 1rem;
+  }
+}
+
+.input-hidden:checked ~ .blur {
+  transform: translateX(0);
+}
+.input-hidden:checked ~ .list-responsive {
+  transform: translateX(0);
+}
+/* .input-hidden:checked + .blur {
+  display: block;
+} */
+
+.input-hidden:checked ~ .hamburger > .hamburger_unity::before {
+  transform: rotate(-130deg);
+  top: 0;
+}
+.input-hidden:checked ~ .hamburger > .hamburger_unity::after {
+  transform: rotate(130deg);
+  top: 0;
+}
+.input-hidden:checked ~ .hamburger > .hamburger_unity {
+  background-color: transparent;
 }
