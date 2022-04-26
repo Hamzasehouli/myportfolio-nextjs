@@ -7,7 +7,7 @@ const MainNav = function (props) {
   const inputHidden = useRef(null);
   const toggleTheCheckedInput = useCallback(() => {
     inputHidden.current.checked = false;
-  });
+  }, [inputHidden]);
   return (
     <nav className={Class.nav}>
       <Link href="/" passHref>
