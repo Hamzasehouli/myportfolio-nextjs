@@ -5,6 +5,12 @@
   grid-gap: 2.5rem;
   margin: 6rem 0;
 }
+@media only screen and (max-width: 43rem) {
+  .work-list {
+    width: 70%;
+    margin: 6rem auto;
+  }
+}
 
 .title {
   font-size: 1.6rem;
