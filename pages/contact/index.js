@@ -2,6 +2,7 @@ import BasePage from "../../components/BasePage";
 import BaseForm from "../../components/BaseForm";
 import Head from "next/head";
 import { useState, useRef, useEffect, useCallback } from "react";
+import { useRouter } from "next/router";
 
 const Contact = function () {
   // const [subjectError, setSubjectError] = useState(true);
@@ -14,6 +15,7 @@ const Contact = function () {
   const [messageError, setMessageError] = useState(false);
   const [pending, setPending] = useState(false);
   const [status, setStatus] = useState({ title: "", ok: false });
+  const router = useRouter();
 
   let nameErrorModel = false;
   let emailErrorModel = false;
@@ -82,6 +84,10 @@ const Contact = function () {
       setMessage("");
       setStatus({ title: data.message, ok: true });
       setPending(false);
+      setTimeout(() => {
+        setStatus({ title: "", ok: false });
+        router.replace("/");
+      }, 3000);
     } catch (err) {
       setStatus({ title: "Email has not been sent", ok: false });
       setPending(false);

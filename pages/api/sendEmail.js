@@ -10,16 +10,16 @@ let transporter = nodemailer.createTransport({
 export default async function sendEmail(req, res) {
   try {
     const { name, email, subject, message } = JSON.parse(req.body);
-    // let info = await transporter.sendMail({
-    //   from: "sehoulihamza@yahoo.com", // sender address
-    //   to: "sehouli.hamza@gmail.com", // list of receivers
-    //   subject: subject, // Subject line
-    //   html: `<div>
-    //       <p>Name: ${name}</p>
-    //       <p>Email: ${email}</p>
-    //       <p>Message: ${message}</p>
-    //     </div>`,
-    // });
+    await transporter.sendMail({
+      from: "sehoulihamza@yahoo.com", // sender address
+      to: "sehouli.hamza@gmail.com", // list of receivers
+      subject: subject, // Subject line
+      html: `<div>
+          <p>Name: ${name}</p>
+          <p>Email: ${email}</p>
+          <p>Message: ${message}</p>
+        </div>`,
+    });
 
     res.status(200).json({ message: "Email sent successfully", ok: true });
   } catch (err) {

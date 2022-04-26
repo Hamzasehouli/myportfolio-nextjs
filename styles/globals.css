@@ -181,7 +181,7 @@ main {
 .splash {
   width: 100vw;
   height: 100vh;
-  background-color: var(--color-dark);
+  background-color: var(--color-primary);
   display: flex;
   align-items: center;
   justify-content: center;
