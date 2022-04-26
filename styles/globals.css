@@ -152,9 +152,9 @@ main {
 }
 
 .icon-responsive {
-  width: 10px;
-  height: 10px;
-  margin-right: 1rem;
+  width: 20px;
+  height: 20px;
+  margin-right: 1.5rem;
 }
 @keyframes icons {
   0% {
@@ -238,10 +238,10 @@ main {
     font-size: 4rem;
   }
   .identity {
-    font-size: 2rem;
+    font-size: 3rem;
   }
   .description {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin-top: 12px;
   }
   .name,
@@ -260,13 +260,13 @@ main {
 }
 @media only screen and (max-width: 23rem) {
   .name {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
   }
   .identity {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
   .description {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     margin-top: 12px;
   }
   .name,
@@ -287,5 +287,16 @@ main {
 @media only screen and (max-width: 41rem) {
   body {
     font-size: 1.4rem;
+  }
+}
+
+@media only screen and (max-height: 27rem) {
+  .icons {
+    display: none;
+  }
+
+  .icons-responsive {
+    display: flex;
+    justify-content: flex-start;
   }
 }
