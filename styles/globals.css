@@ -183,3 +183,50 @@ main {
   border-radius: 0;
   background: var(--color-secondary);
 }
+
+@media only screen and (max-width: 57rem) {
+  .name {
+    font-size: 7rem;
+  }
+  .identity {
+    font-size: 4rem;
+  }
+  .description {
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (max-width: 41rem) {
+  .name {
+    font-size: 6rem;
+  }
+  .identity {
+    font-size: 3rem;
+  }
+  .description {
+    font-size: 1.4rem;
+    margin-top: 12px;
+  }
+}
+@media only screen and (max-width: 33rem) {
+  .name {
+    font-size: 4rem;
+  }
+  .identity {
+    font-size: 2rem;
+  }
+  .description {
+    font-size: 1.2rem;
+    margin-top: 12px;
+  }
+  .name,
+  .identity,
+  .description {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 41rem) {
+  body {
+    font-size: 1.4rem;
+  }
+}
