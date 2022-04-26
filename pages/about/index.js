@@ -45,7 +45,7 @@ const About = function () {
         <title>Hamza Sehouli | About me</title>
       </Head>
       <section className="about-section">
-        <div style={{ width: "60%" }}>
+        <div className="myself-container">
           <div className="myself">
             <p>
               I am a Fullstack web and mobile developer Based in Tangier,
@@ -91,9 +91,8 @@ const About = function () {
             Here are a few technologies I’ve been working with recently:
           </p>
           <ul className="menu">{MenuButtons}</ul>
-          <div>
-            <ul className="techs">{TechList}</ul>
-          </div>
+
+          <ul className="techs">{TechList}</ul>
         </div>
         <figure className="personal-image"></figure>
       </section>

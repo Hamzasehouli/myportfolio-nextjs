@@ -250,12 +250,19 @@ main {
     width: 100%;
     text-align: center;
   }
+  .icons-responsive {
+    justify-content: center !important;
+  }
+}
+
+@media only screen and (max-width: 74rem) {
   .icons {
     display: none;
   }
 
   .icons-responsive {
     display: flex;
+    justify-content: flex-start;
   }
 }
 @media only screen and (max-width: 23rem) {
@@ -274,6 +281,9 @@ main {
   .description {
     width: 100%;
     text-align: center;
+  }
+  .icons-responsive {
+    display: flex;
   }
 
   /* .base-main {

@@ -24,7 +24,23 @@
 
 .menu {
   display: flex;
+  width: 100%;
   margin: 2rem 0;
+}
+
+.myself-container {
+  width: 60%;
+}
+
+@media only screen and (max-width: 35rem) {
+  .menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(7rem, 1fr));
+    grid-gap: 1rem 0;
+  }
+  .myself-container {
+    width: 100%;
+  }
 }
 
 .menu li > * {
@@ -73,6 +89,13 @@
   margin: 4rem 0;
 }
 
+@media only screen and (max-width: 21rem) {
+  .personal-image {
+    width: 18rem;
+    height: 18rem;
+  }
+}
+
 .personal-image::before {
   top: -10px;
   right: -10px;
@@ -105,4 +128,10 @@
 .about-section {
   display: flex;
   justify-content: space-between;
+}
+
+@media only screen and (max-width: 77rem) {
+  .about-section {
+    flex-direction: column;
+  }
 }
