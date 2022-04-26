@@ -4,11 +4,20 @@
   grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
   grid-gap: 2.5rem;
   margin: 6rem 0;
+  /* background-color: red; */
 }
 @media only screen and (max-width: 43rem) {
   .work-list {
-    width: 70%;
+    /* width: 70%; */
     margin: 6rem auto;
+  }
+  .work-item {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 21rem) {
+  .work-item {
+    width: 70%;
   }
 }
 
@@ -27,6 +36,8 @@
   box-shadow: 2px 2px 20px black;
   display: flex;
   flex-direction: column;
+
+  margin: 0 auto;
   /* justify-content: space-between; */
 }
 
