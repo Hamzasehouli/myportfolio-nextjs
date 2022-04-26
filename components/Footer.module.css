@@ -4,3 +4,15 @@
   background-color: var(--color-primary);
   margin-top: 5rem;
 }
+
+.footer {
+  text-align: center;
+}
+
+@media only screen and (max-width: 74rem) {
+  .icons-footer {
+  }
+
+  .icon-footer {
+  }
+}

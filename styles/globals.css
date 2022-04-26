@@ -129,11 +129,13 @@ main {
 }
 
 .icon,
-.icon-responsive {
+.icon-responsive,
+.icon-footer {
   fill: var(--color-light);
 }
 
-.icon {
+.icon,
+.icon-footer {
   width: 2rem;
   height: 2rem;
 }
@@ -146,12 +148,14 @@ main {
   animation-fill-mode: backwards;
 }
 
-.icons-responsive {
+.icons-responsive,
+.icons-footer {
   display: none;
   justify-content: center;
 }
 
-.icon-responsive {
+.icon-responsive,
+.icon-footer {
   width: 20px;
   height: 20px;
   margin-right: 1.5rem;
@@ -259,10 +263,16 @@ main {
   .icons {
     display: none;
   }
-
+  .icons-footer,
   .icons-responsive {
     display: flex;
+  }
+  .icons-responsive {
     justify-content: flex-start;
+  }
+  .icons-footer {
+    justify-content: center;
+    margin-bottom: 2rem;
   }
 }
 @media only screen and (max-width: 23rem) {
