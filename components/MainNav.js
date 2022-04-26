@@ -2,7 +2,12 @@ import Class from "./MainNav.module.css";
 import Link from "next/link";
 import BaseButton from "./BaseButton";
 import Image from "next/image";
+import { useCallback, useRef } from "react";
 const MainNav = function (props) {
+  const inputHidden = useRef(null);
+  const toggleTheCheckedInput = useCallback(() => {
+    inputHidden.current.checked = false;
+  });
   return (
     <nav className={Class.nav}>
       <Link href="/" passHref>
@@ -38,23 +43,28 @@ const MainNav = function (props) {
           </BaseButton>
         </li>
       </ul>
-      <input id="hidden" className={Class["input-hidden"]} type="checkbox" />
+      <input
+        ref={inputHidden}
+        id="hidden"
+        className={Class["input-hidden"]}
+        type="checkbox"
+      />
       <label htmlFor="hidden" className={Class.hamburger}>
         <span className={Class["hamburger_unity"]}></span>
       </label>
-      <div className={Class.blur}></div>
+      <div onClick={toggleTheCheckedInput} className={Class.blur}></div>
       <ul className={Class["list-responsive"]}>
-        <li>
+        <li onClick={toggleTheCheckedInput}>
           <BaseButton mode="anchor" state="ghost" to="/about">
             About
           </BaseButton>
         </li>
-        <li>
+        <li onClick={toggleTheCheckedInput}>
           <BaseButton mode="anchor" state="ghost" to="/work">
             Work
           </BaseButton>
         </li>
-        <li>
+        <li onClick={toggleTheCheckedInput}>
           <BaseButton mode="anchor" state="ghost" to="/contact">
             Contact
           </BaseButton>
@@ -64,7 +74,7 @@ const MainNav = function (props) {
             Resume
           </BaseButton>
         </li>
-        <li>
+        <li onClick={toggleTheCheckedInput}>
           <Link href="/" passHref>
             <a>
               <Image
