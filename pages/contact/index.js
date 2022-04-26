@@ -92,7 +92,7 @@ const Contact = function () {
       <Head>
         <title>Hamza Sehouli | Let&apos;s us hear from you</title>
       </Head>
-      <section style={{ width: "60%" }}>
+      <section className="form-section">
         <p>
           I am currenty looking for new job opportunities. However if you have a
           request or question, feel free to use this form.

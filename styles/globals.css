@@ -316,3 +316,18 @@ main {
     transform: scale(0.5);
   }
 }
+
+.form-section {
+  width: 60%;
+}
+
+@media only screen and (max-width: 30rem) {
+  .form-section {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 25rem) {
+  .form-section {
+    margin: 0 auto;
+  }
+}
