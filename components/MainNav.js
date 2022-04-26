@@ -39,7 +39,7 @@ const MainNav = function (props) {
         </li>
       </ul>
       <input id="hidden" className={Class["input-hidden"]} type="checkbox" />
-      <label for="hidden" className={Class.hamburger}>
+      <label htmlFor="hidden" className={Class.hamburger}>
         <span className={Class["hamburger_unity"]}></span>
       </label>
       <div className={Class.blur}></div>
