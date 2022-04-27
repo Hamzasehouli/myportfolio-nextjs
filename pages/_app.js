@@ -35,7 +35,7 @@ function MyApp({ Component, pageProps }) {
 
         <meta
           name="google-site-verification"
-          content={process.env.GOOGLE_CONSOLE}
+          content="jQruFFKYGt6dLfyNVD91t53-oEvS1R3DMIiQCMAxxJk"
         />
 
         <script
@@ -49,7 +49,7 @@ function MyApp({ Component, pageProps }) {
                     function gtag(){dataLayer.push(arguments);}
                     gtag('js', new Date());
 
-                    gtag('config', ${process.env.GOOGLE_ANALYTICS});
+                    gtag('config', G-S2DF9C90E5);
                     `,
           }}
         />
