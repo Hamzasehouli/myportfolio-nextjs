@@ -52,7 +52,7 @@ const Work = function () {
         <div className="links-container">
           <a href={w.github} target={"_blank"} rel="noreferrer">
             <svg className="work-icon">
-              <use href="/projects/img/sprite.svg#icon-github"></use>
+              <use href="/sprite.svg#icon-github"></use>
             </svg>
           </a>
           <a href={w.link} target={"_blank"} rel="noreferrer">
