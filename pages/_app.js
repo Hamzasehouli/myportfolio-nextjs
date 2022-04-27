@@ -37,6 +37,15 @@ function MyApp({ Component, pageProps }) {
           name="google-site-verification"
           content="jQruFFKYGt6dLfyNVD91t53-oEvS1R3DMIiQCMAxxJk"
         />
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-S2DF9C90E5"
+        ></script>
+        <script>
+          window.dataLayer = window.dataLayer || []; function gtag()
+          {dataLayer.push(arguments)}
+          gtag('js', new Date()); gtag('config', 'G-S2DF9C90E5');
+        </script>
         <title>Hamza Sehouli</title>
       </Head>
       <Component {...pageProps} />
