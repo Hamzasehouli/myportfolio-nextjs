@@ -36,6 +36,10 @@ function MyApp({ Component, pageProps }) {
         />
         <meta name="author" content="Hamza Sehouli" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          name="google-site-verification"
+          content="8XhzDNaXOfjmiry81QhI0ZFAoN9Lv63YIrZ-U311Tfw"
+        />
         <title>Hamza Sehouli</title>
       </Head>
       <Component {...pageProps} />
