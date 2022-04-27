@@ -67,6 +67,10 @@ const Work = function () {
   return (
     <BasePage title="My achievments">
       <Head>
+        <meta
+          name="description"
+          content="Hamza Sehouli work page, the most featured web and mobile development projects"
+        />
         <title>Hamza Sehouli | My achievments</title>
       </Head>
       <ul className="work-list">{Markup}</ul>

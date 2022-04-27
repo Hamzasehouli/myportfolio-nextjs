@@ -27,18 +27,15 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <link rel="shortcut icon" href="/Logo.svg" />
         <meta
-          name="description"
-          content="Hamza Sehouli, fullstack web and mobile developer based in Tangier morocco"
-        />
-        <meta
           name="keywords"
           content="HTML, CSS, JavaScript, sass, node.js, next.js, react-native, react.js, laravel, PHP,vue.js, next.js docker,express.js, mongo, mongoose"
         />
         <meta name="author" content="Hamza Sehouli" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
         <meta
           name="google-site-verification"
-          content="8XhzDNaXOfjmiry81QhI0ZFAoN9Lv63YIrZ-U311Tfw"
+          content="jQruFFKYGt6dLfyNVD91t53-oEvS1R3DMIiQCMAxxJk"
         />
         <title>Hamza Sehouli</title>
       </Head>

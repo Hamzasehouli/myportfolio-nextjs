@@ -96,6 +96,10 @@ const Contact = function () {
   return (
     <BasePage title="Contact">
       <Head>
+        <meta
+          name="description"
+          content="Hamza Sehouli contact page, ypu can send me a question or request"
+        />
         <title>Hamza Sehouli | Let&apos;s us hear from you</title>
       </Head>
       <section className="form-section">

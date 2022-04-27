@@ -42,6 +42,10 @@ const About = function () {
   return (
     <BasePage title="About me">
       <Head>
+        <meta
+          name="description"
+          content="About Hamza Sehouli page, my story, web and mobile technologies I use"
+        />
         <title>Hamza Sehouli | About me</title>
       </Head>
       <section className="about-section">
