@@ -6,21 +6,21 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Head from "next/head";
 function MyApp({ Component, pageProps }) {
-  const [splash, setSplash] = useState(true);
+  // const [splash, setSplash] = useState(true);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setSplash(false);
-    }, 3000);
-  }, []);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setSplash(false);
+  //   }, 3000);
+  // }, []);
 
-  if (splash) {
-    return (
-      <div className="splash">
-        <Image alt="" width={100} height={100} src="/Logo.svg" />
-      </div>
-    );
-  }
+  // if (splash) {
+  //   return (
+  //     <div className="splash">
+  //       <Image alt="" width={100} height={100} src="/Logo.svg" />
+  //     </div>
+  //   );
+  // }
 
   return (
     <Layout>
