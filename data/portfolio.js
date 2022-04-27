@@ -22,7 +22,7 @@ export const portfolio = [
       { id: "tech3", title: "themealdb api" },
     ],
     description:
-      "Happymeal is a cooking recipes app. Nuxt.js, which is a vue.js framework, used to solve some vue.js limitations like SEO and some other helpful features. Beside nuxt.js, I chose themealdb.com as core api source, as it commes with handy routes like categories, countries etc....",
+      "Happymeal is a cooking recipes app. Nuxt.js, which is a vue.js framework, used to solve some vue.js limitations like SEO and some other helpful features. Beside nuxt.js, I chose themealdb.com as main api source, as it commes with handy routes like categories, countries etc....",
     category: "Frontend",
     color: "rgba(222,222,222,.5)",
   },
@@ -38,7 +38,7 @@ export const portfolio = [
       { id: "tech3", title: "rapid api" },
     ],
     description:
-      "Lodgingnbed is a hotel reservation app built using vue.js framework, firebase to store cities for the autocomplition, booking api from third party the RAPIDAPI, and other api from the same site for currency conversion",
+      "Lodgingnbed is an online hotel reservation app built with vue.js framework, firebase to store cities for the autocomplition, booking api from third party the RAPIDAPI.",
     category: "Frontend",
     color: "rgba(222,222,222,.5)",
   },
@@ -53,7 +53,7 @@ export const portfolio = [
       { id: "tech2", title: "firebase" },
     ],
     description:
-      "Wildwater is a landing page of a fiction water enterprise, I called it Wildwater.To develope this website, I user vue.js as main web technologie",
+      "Wildwater is a landing page of a fiction water enterprise, I called it Wildwater. I used vue.js for development",
     category: "Frontend",
     color: "rgba(222,222,222,.5)",
   },
@@ -74,7 +74,7 @@ export const portfolio = [
       { id: "tech8", title: "javascript" },
     ],
     description:
-      "Interbooks is a server side rendering e-commerce web app for selling books online, is developped using node.js with its handy framework express.js, mongoDb Database and pug template engine to render the views",
+      "Interbooks is a server side rendering e-commerce web app for selling books online, is developped using node.js with its handy framework express.js, mongoDb database and pug template engine to render the views",
     category: "Frontend",
     color: "rgba(222,222,222,.5)",
   },
@@ -119,7 +119,7 @@ export const portfolio = [
     github: "https://github.com/Hamzasehouli/bynd",
     techs: [{ id: "tech1", title: "react" }],
     description:
-      "Bynd shoes is online retail store that sells sneaker and shoes, is developedwith pure react library.",
+      "Bynd shoes is an online retail store that sells sneakers and shoes, it is developed with react library.",
     category: "Frontend",
     color: "rgba(222,222,222,.5)",
   },
@@ -131,7 +131,7 @@ export const portfolio = [
     github: "https://github.com/Hamzasehouli/myportfolio-nextjs",
     techs: [{ id: "tech1", title: "next" }],
     description:
-      "This is my personal portfolio your are on right now, I made ths portfoiol using the prominent react framework next,js",
+      "This is my personal portfolio your are on right now, I made this portfolio using the prominent react framework next.js",
     category: "Frontend",
     color: "rgba(222,222,222,.5)",
   },
