@@ -18,7 +18,11 @@ const Footer = function () {
             </a>
           </li>
           <li>
-            <a href="#">
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href="https://twitter.com/Hamzasehouli"
+            >
               <svg className="icon-footer">
                 <use href="/sprite.svg#icon-twitter"></use>
               </svg>
@@ -72,10 +76,10 @@ const Footer = function () {
             <a
               target="_blank"
               rel="noreferrer"
-              href="https://www.youtube.com/channel/UC6ROqFB77uZr14lwMm0CmAw"
+              href="https://stackoverflow.com/users/18792668/hamza-sehouli"
             >
               <svg className="icon-footer">
-                <use href="/sprite.svg#icon-youtube"></use>
+                <use href="/sprite.svg#icon-stackoverflow"></use>
               </svg>
             </a>
           </li>

@@ -30,7 +30,11 @@ const Layout = function (props) {
             </a>
           </li>
           <li>
-            <a href="#">
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href="https://twitter.com/Hamzasehouli"
+            >
               <svg className="icon">
                 <use href="/sprite.svg#icon-twitter"></use>
               </svg>
@@ -84,10 +88,10 @@ const Layout = function (props) {
             <a
               target="_blank"
               rel="noreferrer"
-              href="https://www.youtube.com/channel/UC6ROqFB77uZr14lwMm0CmAw"
+              href="https://stackoverflow.com/users/18792668/hamza-sehouli"
             >
               <svg className="icon">
-                <use href="/sprite.svg#icon-youtube"></use>
+                <use href="/sprite.svg#icon-stackoverflow"></use>
               </svg>
             </a>
           </li>

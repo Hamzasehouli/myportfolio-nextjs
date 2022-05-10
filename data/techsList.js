@@ -51,7 +51,7 @@ export const TECHNOS = [
   },
   {
     id: "t11",
-    title: "Github",
+    title: "Git",
     link: "https://github.com/",
     category: "others",
   },
